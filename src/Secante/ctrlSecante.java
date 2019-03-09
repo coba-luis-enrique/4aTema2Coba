@@ -27,32 +27,32 @@ public class ctrlSecante {
     
     public boolean esRangoValido(){
        boolean valido = false;
-       if(this.getEvaluacion(this.xi)*this.getEvaluacion(this.xs) != 0)
+       if(this.getEvaluacion(this.xi)*this.getEvaluacion(this.xs)<0)
            valido = true;
        return valido;
    }
     
     public double getEvaluacion(double x){
-       return Math.pow(x,2)-(3*x)-4;
+       return (Math.pow((Math.E),(Math.pow((x), 2)*-1)))-x;
    }
    
     
     public double getRaiz(double xi, double xs){
-       return xi - getEvaluacion(xi) * (xs - xi) / (getEvaluacion(xs) - getEvaluacion(xi));
+       return (xs) - ((getEvaluacion(xs) * (xi - xs)) / (getEvaluacion(xi) - getEvaluacion(xs)));
    }
     
     private double getError(double xrActual, double xrInicial){
-       return ((xrActual-xrInicial)/xrActual)*100;
+       return Math.abs((xrActual-xrInicial)/xrActual)*100;
    }
     
     public ArrayList<filaSecante> Secante(){
        int i =1;
-       double errorAproximacion;
-       double errorCalculado=1;
+       double errorAproximacion=1;
+       double errorCalculado;
        ArrayList<filaSecante> listaSoluciones = new ArrayList<>();
        double xr;
        if(this.esRangoValido()){
-           while(errorCalculado > this.errorDeseado){
+           while(errorAproximacion > this.errorDeseado){
                
                xr = this.getRaiz(this.xi, this.xs);
                

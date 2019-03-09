@@ -15,7 +15,7 @@ import javax.swing.table.AbstractTableModel;
     
 public class tablaSecante extends AbstractTableModel{
     public String[] columnas={
-        "i", "Xi-1", "Xi", "F(xi-1)" , "F(xi)", "x2", "Error","Aproximacion"
+        "i", "Xi-1", "Xi", "F(xi-1)" , "F(xi)", "x2", "Aproximacion","Error"
     };
     
     public Class [] tipos ={
