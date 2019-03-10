@@ -35,8 +35,10 @@ public class dlgAproximaciones extends javax.swing.JDialog {
         jError = new javax.swing.JLabel();
         JTextValorI = new javax.swing.JTextField();
         jTextError = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        getContentPane().setLayout(null);
 
         tAproximaciones.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -51,64 +53,42 @@ public class dlgAproximaciones extends javax.swing.JDialog {
         ));
         jScrollPane1.setViewportView(tAproximaciones);
 
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(20, 80, 460, 250);
+
         jBAproximacion.setText("Aproximacion");
         jBAproximacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jBAproximacionActionPerformed(evt);
             }
         });
+        getContentPane().add(jBAproximacion);
+        jBAproximacion.setBounds(20, 50, 97, 23);
 
+        jInicial.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         jInicial.setText("Valor Inicial");
+        getContentPane().add(jInicial);
+        jInicial.setBounds(124, 20, 80, 33);
 
+        jError.setFont(new java.awt.Font("Comic Sans MS", 1, 12)); // NOI18N
         jError.setText("Error");
+        getContentPane().add(jError);
+        jError.setBounds(210, 20, 62, 33);
 
         JTextValorI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 JTextValorIActionPerformed(evt);
             }
         });
+        getContentPane().add(JTextValorI);
+        JTextValorI.setBounds(123, 51, 80, 20);
+        getContentPane().add(jTextError);
+        jTextError.setBounds(213, 51, 60, 20);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(232, 232, 232)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBAproximacion)
-                        .addGap(173, 173, 173)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(JTextValorI, javax.swing.GroupLayout.PREFERRED_SIZE, 59, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(66, 66, 66)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jTextError, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jError, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(66, 66, 66)))
-                .addContainerGap(305, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(115, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jBAproximacion)
-                        .addGap(32, 32, 32))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jInicial, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jError, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(JTextValorI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jTextError, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)))
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(39, 39, 39))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/73182469ec71fb31fa3677c65e0be44f.jpg"))); // NOI18N
+        jLabel1.setToolTipText("");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-40, -20, 590, 450);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -134,6 +114,7 @@ public class dlgAproximaciones extends javax.swing.JDialog {
     private javax.swing.JButton jBAproximacion;
     private javax.swing.JLabel jError;
     private javax.swing.JLabel jInicial;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField jTextError;
     private javax.swing.JTable tAproximaciones;

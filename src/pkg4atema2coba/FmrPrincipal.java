@@ -114,14 +114,17 @@ public class FmrPrincipal extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
        dnjBiseccion dlg = new dnjBiseccion(this, true);
        dlg.setSize(525,330);
-       dlg.setVisible(true);        // TODO add your handling code here:
+       dlg.setVisible(true);  
+       dlg.setResizable(false);
+        dlg.setLocationRelativeTo(null);// TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         dnjSecante dlg = new dnjSecante(this,true);
         dlg.setSize(525,330);
         dlg.setVisible(true);
-        dlg.setLocationRelativeTo(dlg);// TODO add your handling code here:
+        dlg.setResizable(false);
+        dlg.setLocationRelativeTo(null); 
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
     private void EtiquetaSeisActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EtiquetaSeisActionPerformed
@@ -132,17 +135,19 @@ public class FmrPrincipal extends javax.swing.JFrame {
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:
         dlgAproximaciones dlg = new dlgAproximaciones(this,true);
-        dlg.setSize(525,330);
+        dlg.setSize(525,345);
         dlg.setVisible(true);
-        dlg.setLocationRelativeTo(dlg);
+        dlg.setResizable(false);
+        dlg.setLocationRelativeTo(null);
         
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         dnjNewton dlg = new dnjNewton(this,true);
-        dlg.setSize(525,330);
+        dlg.setSize(525,335);
         dlg.setVisible(true);
-        dlg.setLocationRelativeTo(dlg);// TODO add your handling code here:
+        dlg.setResizable(false);
+        dlg.setLocationRelativeTo(null);// TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
 

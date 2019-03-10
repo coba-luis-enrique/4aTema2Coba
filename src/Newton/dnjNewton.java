@@ -38,6 +38,7 @@ public class dnjNewton extends javax.swing.JDialog {
         tablaNewton = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -86,17 +87,19 @@ public class dnjNewton extends javax.swing.JDialog {
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(51, 255, 255));
         jLabel1.setText("Xi");
         getContentPane().add(jLabel1);
         jLabel1.setBounds(130, 20, 24, 22);
 
         jLabel4.setBackground(new java.awt.Color(255, 255, 255));
         jLabel4.setFont(new java.awt.Font("Comic Sans MS", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(51, 255, 255));
         jLabel4.setText("ERROR");
         getContentPane().add(jLabel4);
         jLabel4.setBounds(180, 20, 60, 22);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/math-widescreen-wallpaper-49709-51388-hd-wallpapers-768x435.jpg"))); // NOI18N
+        getContentPane().add(jLabel2);
+        jLabel2.setBounds(0, -100, 530, 400);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -129,6 +132,7 @@ public class dnjNewton extends javax.swing.JDialog {
     private javax.swing.JTextField Xi;
     private javax.swing.Box.Filler filler1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable tablaNewton;
