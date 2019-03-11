@@ -15,8 +15,8 @@ import javax.swing.JOptionPane;
  */
 public class ctrlNewton {
    //Variables
-   private double xi, x2, errorDeseado;
-   private int iteraciones;
+   private double xi, errorDeseado;
+
 
     public ctrlNewton(double xi, double errorDeseado) { //Constructor
         //punteros 
@@ -38,7 +38,7 @@ public class ctrlNewton {
    }
     
     private double getError(double xrActual, double xrInicial){
-       return Math.abs((xrActual-xrInicial)/xrActual)*100;
+       return Math.abs((xrActual-xrInicial)/xrActual); 
    }
     
     public ArrayList<filaNewton> Newton(){
